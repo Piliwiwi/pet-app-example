@@ -26,23 +26,25 @@ Este repositorio contiene la aplicación móvil para la gestión de información
 Para probar la aplicación con diferentes configuraciones, puedes seleccionar entre varias variantes de build en Android Studio:
 
 - **dummydebug**: Usa esta variante para probar la aplicación con archivos JSON que están actualmente en el proyecto.
-- **devdebug**: Usa esta variante para probar la aplicación con los servicios de backend explicados anteriormente.
+- **devdebug**: Usa esta variante para probar la aplicación con los servicios de backend relacionados con este proyecto.
 - **prod** y **staging**: Estas variantes son ejemplos, y deberás proporcionar tus propias URLs de producción o staging si las tienes.
 
 #### Selección de Build Variant
 
 1. Abre Android Studio.
-2. Ve a `Build > Select Build Variant`.
-3. Selecciona la variante de build que deseas usar (`dummydebug`, `devdebug`, `prod`, `staging`).
+2. Ve a la pestaña inferior izquierda llamada `Build Variants`.
+3. Selecciona la variante `Active Build Variant` del módulo `:app` deseas usar (`dummyDebug`, `devDebug`, `prodDebug`, `stagingDebug`).
 
 ### Repositorios de Backend
 
-La aplicación móvil apunta a los siguientes repositorios de backend:
+La aplicación móvil se puede utilizar con los siguientes repositorios de backend:
 
 - [Servicio MiddleEnd](https://github.com/Piliwiwi/pet-svc-middleend-example)
 - [Servicio de Mascotas](https://github.com/Piliwiwi/pet-svc-pets-example)
 - [Servicio de Autenticación](https://github.com/Piliwiwi/pet-svc-auth-example)
 - Servicio de Vacunas (solo de ejemplo, no existe repositorio)
+
+Para ello, se deben correr los servicios de backend en local, y utilizar la variante `devDebug`
 
 ### Google Services JSON
 
@@ -71,11 +73,9 @@ Para usar Flipper:
     cd pet-app-example
     ```
 
-2. Selecciona la variante de build que deseas usar (por ejemplo, `dummydebug` o `devdebug`).
+2. Selecciona la variante de build que deseas usar (por ejemplo, `dummyDebug` o `devDebug`).
 
-3. Añade el archivo `google-services.json` en el directorio `app`.
-
-4. Ejecuta la aplicación en tu dispositivo o emulador Android.
+3. Ejecuta la aplicación en tu dispositivo o emulador Android.
 
 ## Licencia
 
