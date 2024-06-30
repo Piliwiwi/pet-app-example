@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Example.NoActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/ui_brand_primary</item>
+        <item name="colorPrimaryVariant">@color/ui_primary_color_dark</item>
+        <item name="colorOnPrimary">@color/ui_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ui_secondary_color</item>
+        <item name="colorSecondaryVariant">@color/ui_secondary_color_dark</item>
+        <item name="colorOnSecondary">@color/ui_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/ui_brand_primary</item>
+        <!-- No action bar. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/ui_font_16</item>
+    </style>
+</resources>

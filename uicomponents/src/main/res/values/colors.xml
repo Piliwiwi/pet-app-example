@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="ui_black">#FF000000</color>
+    <color name="ui_white">#FFFFFFFF</color>
+    <color name="ui_gray">#6C6C6C</color>
+    <color name="ui_light_gray">#F1F1F1</color>
+    <color name="ui_blue">#3E7DFA</color>
+    <color name="ui_green">#3B9E46</color>
+    <color name="ui_orange">#E86029</color>
+    <color name="ui_primary_color">#345E92</color>
+    <color name="ui_primary_color_dark">#204571</color>
+    <color name="ui_secondary_color">#78B3CD</color>
+    <color name="ui_secondary_color_dark">#357E8D</color>
+    <color name="ui_white_transparent">#A1FFFFFF</color>
+    <color name="ui_brand_primary">#7CC0E7</color>
+    <color name="ui_secondary_font_grey">#727272</color>
+    <color name="ui_primary_font_grey">#424242</color>
+    <color name="ui_light_sky_blue">#D6F0FF</color>
+    <color name="ui_light_brand_sky_blue">#C3E9FF</color>
+    <color name="ui_red_brand_secondary">#E7403D</color>
+    <color name="ui_green_brand_secondary">#6EBD8E</color>
+    <color name="ui_yellow_brand_secondary">#FFBE56</color>
+    <color name="ui_instruction_grey">#959595</color>
+</resources>

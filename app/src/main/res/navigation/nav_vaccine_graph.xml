@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_vaccine_graph"
+    app:startDestination="@+id/addVaccineFragment">
+
+    <fragment
+        android:id="@+id/addVaccineFragment"
+        android:name="com.example.app.features.health.vaccines.add.ui.add.AddVaccineFragment"
+        android:label="Añadir Vacuna"
+        tools:layout="@layout/fragment_vaccine_add">
+        <action
+            android:id="@+id/from_add_vaccine_to_succes"
+            app:destination="@+id/addVaccineSuccessFragment"
+            app:popUpTo="@+id/nav_vaccine_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVaccineSuccessFragment"
+        android:name="com.example.app.features.health.vaccines.add.ui.add.AddVaccineSuccessFragment"
+        tools:layout="@layout/fragment_add_vaccine_success" />
+
+</navigation>

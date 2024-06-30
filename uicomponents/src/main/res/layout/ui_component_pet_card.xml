@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_rounded_card"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="7dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/pet_card_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+    <TextView
+        android:id="@+id/pet_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Misifus"
+        android:textColor="@color/ui_white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/pet_card_photo"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/pet_card_photo" />
+
+    <TextView
+        android:id="@+id/pet_card_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Gato"
+        android:textColor="@color/ui_white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/pet_card_photo"
+        app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+    <ImageView
+        android:id="@+id/pet_card_ic_genre"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+    <TextView
+        android:id="@+id/pet_card_breed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Romano"
+        android:textColor="@color/ui_white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/pet_card_ic_genre"
+        app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+    <TextView
+        android:id="@+id/pet_card_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="4 años"
+        android:textColor="@color/ui_white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/pet_card_animal"
+        app:layout_constraintTop_toBottomOf="@id/pet_card_animal" />
+
+    <TextView
+        android:id="@+id/pet_card_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:justificationMode="inter_word"
+        android:text='"Este gato duerme 16 horas al día, le gusta jugar con pantuflas y comer bolsas de basura, peligroso"'
+        android:textColor="@color/ui_white"
+        app:layout_constraintBottom_toBottomOf="@id/pet_card_photo"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/pet_card_animal"
+        app:layout_constraintTop_toBottomOf="@id/pet_card_age" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

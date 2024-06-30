@@ -1,0 +1,117 @@
+[
+  {
+    "id": "6514e739c4965235800f9409",
+    "name": "Siri",
+    "breedCode": "CAT-1",
+    "breed": {
+      "code": "CAT-1",
+      "name": "Carey",
+      "description": "El pelaje del gato carey está compuesto por pelos negros y rojos. Este estampado se asemeja al patrón del caparazón de las tortugas (de ahí su nombre). Casi todos los gatos carey son hembras.",
+      "refImage": "https://www.zooplus.es/magazine/wp-content/uploads/2022/01/Gato-carey.jpeg"
+    },
+    "animalName": "Gato",
+    "genre": "F",
+    "description": "Gata autista muy asustadisa",
+    "age": null,
+    "profilePhoto": "https://imagizer.imageshack.com/img922/5289/VobqRm.jpg",
+    "ownerIds": [
+      "6514e6aaaf87a40c59c30bc7",
+      "6514e6d8af87a40c59c30bca"
+    ],
+    "animalType": "CAT",
+    "animal": {
+      "type": "CAT",
+      "name": "Gato",
+      "breeds": []
+    }
+  },
+  {
+    "id": "6514e754c4965235800f940a",
+    "name": "Bicho",
+    "breedCode": null,
+    "breed": null,
+    "animalName": "Gato",
+    "genre": "M",
+    "description": "Mi gatito regalón y maldadoso",
+    "age": null,
+    "profilePhoto": "https://imagizer.imageshack.com/img923/9812/nZLBAd.jpg",
+    "ownerIds": [
+      "6514e6aaaf87a40c59c30bc7",
+      "6514e6d8af87a40c59c30bca"
+    ],
+    "animalType": "CAT",
+    "animal": {
+      "type": "CAT",
+      "name": "Gato",
+      "breeds": []
+    }
+  },
+  {
+    "id": "6514e765c4965235800f940b",
+    "name": "Peluo",
+    "breedCode": null,
+    "breed": null,
+    "animalName": "Gato",
+    "genre": "M",
+    "description": "Un gato muy peluo que se cree diva.",
+    "age": null,
+    "profilePhoto": "https://imagizer.imageshack.com/img922/3688/ZQMRv6.jpg",
+    "ownerIds": [
+      "6514e6aaaf87a40c59c30bc7",
+      "6514e6d8af87a40c59c30bca"
+    ],
+    "animalType": "CAT",
+    "animal": {
+      "type": "CAT",
+      "name": "Gato",
+      "breeds": []
+    }
+  },
+  {
+    "id": "6514e778c4965235800f940c",
+    "name": "Men",
+    "breedCode": null,
+    "breed": null,
+    "animalName": "Gato",
+    "genre": "M",
+    "description": "El gato flaite que le robamos a la vecina, es muy sociable",
+    "age": null,
+    "profilePhoto": "https://imagizer.imageshack.com/img923/5293/s0xID1.jpg",
+    "ownerIds": [
+      "6514e6aaaf87a40c59c30bc7",
+      "6514e6d8af87a40c59c30bca"
+    ],
+    "animalType": "CAT",
+    "animal": {
+      "type": "CAT",
+      "name": "Gato",
+      "breeds": []
+    }
+  },
+  {
+    "id": "6514e798c4965235800f940d",
+    "name": "Malteada",
+    "breedCode": "CAT-1",
+    "breed": {
+      "code": "CAT-1",
+      "name": "Carey",
+      "description": "El pelaje del gato carey está compuesto por pelos negros y rojos. Este estampado se asemeja al patrón del caparazón de las tortugas (de ahí su nombre). Casi todos los gatos carey son hembras.",
+      "refImage": "https://www.zooplus.es/magazine/wp-content/uploads/2022/01/Gato-carey.jpeg"
+    },
+    "animalName": "Gato",
+    "genre": "F",
+    "description": "Una gatita muy tierna que parece que tiene un pañuelo en el cuello y zapatos",
+    "age": null,
+    "profilePhoto": "https://imagizer.imageshack.com/img923/2254/hKURxT.jpg",
+    "ownerIds": [
+      "6514e6aaaf87a40c59c30bc7",
+      "6514e6d8af87a40c59c30bca"
+    ],
+    "animalType": "CAT",
+    "animal": {
+      "type": "CAT",
+      "name": "Gato",
+      "breeds": []
+    }
+  }
+]

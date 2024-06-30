@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Doberman",
+    "key": "DOG"
+  },
+  {
+    "name": "Bulldog Francés",
+    "key": "CAT"
+  },
+  {
+    "name": "Bulldog Inglés",
+    "key": "CAT"
+  },
+  {
+    "name": "Doberman",
+    "key": "DUCK"
+  },
+  {
+    "name": "Husky",
+    "key": "HAMSTER"
+  },
+  {
+    "name": "Pastor Alemán",
+    "key": "CATURRA"
+  },
+  {
+    "name": "Golden Retriever",
+    "key": "FERRET"
+  },
+  {
+    "name": "Desconozco",
+    "key": "FISH"
+  }
+]

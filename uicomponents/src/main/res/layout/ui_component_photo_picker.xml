@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/photo_picker_component_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="27dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/photo_picker_component_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ui_light_brand_sky_blue"
+            android:scaleType="centerCrop" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/photo_picker_component_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/ui_margin_36"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="@id/photo_picker_component_card"
+        app:layout_constraintStart_toStartOf="@id/photo_picker_component_card"
+        app:layout_constraintTop_toTopOf="@id/photo_picker_component_card"
+        app:layout_constraintBottom_toTopOf="@id/photo_picker_component_hint"/>
+
+    <com.example.uicomponents.ui.view.ExampleText
+        android:id="@+id/photo_picker_component_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/ui_rounded_corners_rectangle"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingVertical="2dp"
+        android:text="Selecciona o toma una foto"
+        android:textColor="@color/ui_white"
+        app:layout_constraintBottom_toBottomOf="@id/photo_picker_component_card"
+        app:ui_text_type="body_18" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/photo_picker_component_floating_button"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/baseline_local_see_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</merge>

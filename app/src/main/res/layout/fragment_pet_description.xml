@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/ui_margin_36">
+
+    <com.example.uicomponents.ui.component.ResumePetProfileComponent
+        android:id="@+id/pet_description_fragment_resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.uicomponents.ui.component.inputs.PickerInputTextComponent
+        android:id="@+id/pet_description_fragment_breed_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_36"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pet_description_fragment_text"
+        app:layout_constraintEnd_toStartOf="@id/pet_description_fragment_age_input"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pet_description_fragment_resume" />
+
+    <com.example.uicomponents.ui.component.inputs.ExampleInputText
+        android:id="@+id/pet_description_fragment_age_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ui_margin_18"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/pet_description_fragment_breed_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/pet_description_fragment_breed_input"
+        app:layout_constraintTop_toTopOf="@id/pet_description_fragment_breed_input"
+        app:ui_input_type="number" />
+
+    <com.example.uicomponents.ui.view.ExampleText
+        android:id="@+id/pet_description_fragment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_18"
+        android:text="@string/what_is_your_pet_like"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pet_description_fragment_description_input"
+        app:layout_constraintTop_toBottomOf="@id/pet_description_fragment_breed_input"
+        app:ui_text_type="body_18" />
+
+    <com.example.uicomponents.ui.component.inputs.ExampleInputText
+        android:id="@+id/pet_description_fragment_description_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/ui_margin_18"
+        android:layout_marginBottom="@dimen/ui_margin_18"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pet_description_fragment_primary_button"
+        app:layout_constraintTop_toBottomOf="@id/pet_description_fragment_text"
+        app:ui_input_type="long_text" />
+
+    <com.example.uicomponents.ui.component.buttons.TitledButton
+        android:id="@+id/pet_description_fragment_primary_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.example.uicomponents.ui.component.Loader
+        android:id="@+id/pet_description_fragment_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <View
+        android:id="@+id/category_component_view"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:background="@drawable/ui_circle_button_selected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/category_component_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/category_component_view"
+        app:layout_constraintEnd_toEndOf="@id/category_component_view"
+        app:layout_constraintStart_toStartOf="@id/category_component_view"
+        app:layout_constraintTop_toTopOf="@id/category_component_view" />
+
+    <com.example.uicomponents.ui.view.ExampleText
+        android:id="@+id/category_component_item_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginStart="-15dp"
+        android:layout_marginEnd="-15dp"
+        app:layout_constraintTop_toBottomOf="@id/category_component_view"
+        app:layout_constraintStart_toStartOf="@+id/category_component_view"
+        app:layout_constraintEnd_toEndOf="@+id/category_component_view"
+        app:ui_text_type="body_18"/>
+</merge>

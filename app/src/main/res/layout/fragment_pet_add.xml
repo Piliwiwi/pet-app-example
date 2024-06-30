@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.uicomponents.ui.groupcomponent.photopicker.PhotoPickerComponent
+        android:id="@+id/add_pet_fragment_photo_picker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintBottom_toTopOf="@id/add_pet_fragment_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/add_pet_fragment_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/add_pet_fragment_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_pet_fragment_guideline"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.uicomponents.ui.view.ExampleText
+                android:id="@+id/add_pet_fragment_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/ui_margin_36"
+                android:text="@string/enter_your_pet_data"
+                app:layout_constraintTop_toTopOf="parent"
+                app:ui_text_type="body_18" />
+
+            <com.example.uicomponents.ui.component.inputs.ExampleInputText
+                android:id="@+id/add_pet_fragment_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/ui_margin_36"
+                android:layout_marginTop="@dimen/ui_margin_18"
+                app:layout_constraintTop_toBottomOf="@id/add_pet_fragment_text_view"
+                app:ui_input_type="text" />
+
+            <com.example.uicomponents.ui.component.inputs.ExampleInputText
+                android:id="@+id/add_pet_fragment_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/ui_margin_36"
+                android:layout_marginTop="@dimen/ui_margin_18"
+                app:layout_constraintTop_toBottomOf="@id/add_pet_fragment_name_input"
+                app:ui_input_type="text" />
+
+            <com.example.uicomponents.ui.component.inputs.PickerInputTextComponent
+                android:id="@+id/add_pet_fragment_specie_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ui_margin_36"
+                android:layout_marginTop="@dimen/ui_margin_18"
+                app:layout_constraintEnd_toStartOf="@id/add_pet_fragment_selector_buttons"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_pet_fragment_nick_name"
+                app:ui_input_type="text" />
+
+            <com.example.uicomponents.ui.groupcomponent.selectorbuttonlist.SelectorButtonListComponent
+                android:id="@+id/add_pet_fragment_selector_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="@dimen/ui_margin_36"
+                app:layout_constraintBottom_toBottomOf="@id/add_pet_fragment_specie_input"
+                app:layout_constraintLeft_toRightOf="@id/add_pet_fragment_specie_input"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/add_pet_fragment_specie_input" />
+
+            <com.example.uicomponents.ui.component.inputs.PickerInputTextComponent
+                android:id="@+id/add_pet_fragment_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/ui_margin_36"
+                android:layout_marginTop="@dimen/ui_margin_18"
+                app:layout_constraintTop_toBottomOf="@id/add_pet_fragment_specie_input" />
+
+            <com.example.uicomponents.ui.component.buttons.TitledButton
+                android:id="@+id/add_pet_fragment_primary_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/ui_margin_36"
+                android:layout_marginTop="@dimen/ui_margin_26"
+                android:layout_marginBottom="@dimen/ui_margin_36"
+                app:layout_constraintTop_toBottomOf="@id/add_pet_fragment_date_picker"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.example.uicomponents.ui.component.Loader
+        android:id="@+id/add_pet_fragment_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

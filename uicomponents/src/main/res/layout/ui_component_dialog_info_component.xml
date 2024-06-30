@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="18dp">
+
+    <com.example.uicomponents.ui.view.ExampleText
+        android:id="@+id/dialog_component_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:text="Holi"
+        app:ui_text_type="header"/>
+
+    <com.example.uicomponents.ui.view.ExampleText
+        android:id="@+id/dialog_component_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_36"
+        app:layout_constraintTop_toBottomOf="@id/dialog_component_info_title"
+        android:gravity="center"
+        android:text="djashudsad asdoh asdiojaojsd sadijasoidos asdojoajsd asojoasd asojsda "
+        app:ui_text_type="body"/>
+
+    <com.example.uicomponents.ui.view.ExampleText
+        android:id="@+id/dialog_component_info_additional_info"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dialog_component_info_content"
+        android:gravity="center"
+        android:text="ahsdiaso asdoalas asdkasodkas dasijdasodsa dsiandsa ndnasj dsajkd asjd san daskj"
+        app:ui_text_type="additional_info"/>
+
+    <com.example.uicomponents.ui.component.buttons.TitledButton
+        android:id="@+id/dialog_component_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_36"
+        app:layout_constraintTop_toBottomOf="@id/dialog_component_info_additional_info"
+        app:ui_type="secondary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

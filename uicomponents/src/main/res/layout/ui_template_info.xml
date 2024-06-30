@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/ui_margin_16">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/info_template_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/ui_margin_54"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ui_margin_36"
+            app:layout_constraintBottom_toBottomOf="@id/info_template_guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_imageAssetsFolder="images"
+            app:lottie_loop="false" />
+
+        <ImageView
+            android:id="@+id/info_template_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/ui_margin_54"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ui_margin_36"
+            app:layout_constraintBottom_toBottomOf="@id/info_template_guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/info_template_guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <com.example.uicomponents.ui.view.ExampleText
+            android:id="@+id/info_template_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_36"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/info_template_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:ui_text_type="big_header" />
+
+        <com.example.uicomponents.ui.view.ExampleText
+            android:id="@+id/info_template_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/ui_margin_16"
+            app:layout_constraintTop_toBottomOf="@id/info_template_title"
+            app:ui_text_type="body" />
+
+        <com.example.uicomponents.ui.component.buttons.TitledButton
+            android:id="@+id/info_template_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>

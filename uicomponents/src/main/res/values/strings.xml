@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="invalid_email">Correo electrónico inválido</string>
+    <string name="you_log_in">¡Bienvenido!</string>
+    <string name="log_in">Entrar</string>
+    <string name="recover">Recuperar</string>
+    <string name="forgot_my_password">¿Olvidaste la contraseña?</string>
+    <string name="enter_your_user_info">Ingrese sus datos de usuario</string>
+    <string name="name">Nombre</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+</resources>

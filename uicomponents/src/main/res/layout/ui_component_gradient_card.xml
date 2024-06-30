@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/gradient_card_component_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/gradient_card_component_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ui_gradient_blue" />
+
+    <com.example.uicomponents.ui.view.ExampleText
+        android:id="@+id/gradient_card_component_pet_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="Pawtroclo"
+        android:textColor="@color/ui_white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/gradient_card_component_image_view"
+        app:ui_text_type="header" />
+</merge>

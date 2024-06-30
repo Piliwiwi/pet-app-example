@@ -1,0 +1,33 @@
+{
+  "name": "Peludito",
+  "id": "6514e739c4965235800f9409",
+  "nicName": "Pelones",
+  "birthDate": "01 de Junio, 2019",
+  "gender": "M",
+  "breed": "Doméstico Pelo Largo",
+  "animal": "Gato",
+  "age": "5 años",
+  "profileImage": "https://www.zooplus.es/magazine/wp-content/uploads/2022/01/Gato-carey.jpeg",
+  "description": "Gato salchicha gordo bachicha tiene sombrero de marinero. Se tira peo usted puede pegarle.",
+  "health": [
+    {
+      "label": "Vacunas",
+      "icon": "vaccine_ic",
+      "url": "vaccine_url"
+    }
+  ],
+  "owners": [
+    {
+      "name": "José Soto Tarro",
+      "photo": "https://www.zooplus.es/magazine/wp-content/uploads/2022/01/Gato-carey.jpeg",
+      "location": "Valparaiso, V Región",
+      "id": "u12ser238der"
+    },
+    {
+      "name": "Nonose Llama",
+      "photo": "https://www.zooplus.es/magazine/wp-content/uploads/2022/01/Gato-carey.jpeg",
+      "location": "Valparaiso, V Región",
+      "id": "u3aser43"
+    }
+  ]
+}

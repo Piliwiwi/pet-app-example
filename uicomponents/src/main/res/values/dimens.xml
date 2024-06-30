@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ui_dimen_16sp">16sp</dimen>
+    <dimen name="ui_dimen_34sp">34sp</dimen>
+    <dimen name="ui_dimen_60dp">60dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="ui_font_9">9sp</dimen>
+    <dimen name="ui_font_12">12sp</dimen>
+    <dimen name="ui_font_14">14sp</dimen>
+    <dimen name="ui_font_16">16sp</dimen>
+    <dimen name="ui_font_18">18sp</dimen>
+    <dimen name="ui_font_20">20sp</dimen>
+    <dimen name="ui_font_24">24sp</dimen>
+
+    <!-- Margins -->
+    <dimen name="ui_margin_6">6dp</dimen>
+    <dimen name="ui_margin_12">12dp</dimen>
+    <dimen name="ui_margin_16">16dp</dimen>
+    <dimen name="ui_margin_26">26dp</dimen>
+    <dimen name="ui_margin_36">36dp</dimen>
+    <dimen name="ui_margin_40">40dp</dimen>
+    <dimen name="ui_margin_54">54dp</dimen>
+
+    <!-- Sizes -->
+    <dimen name="ui_size_1">1dp</dimen>
+    <dimen name="ui_size_2">2dp</dimen>
+    <dimen name="ui_size_300">300dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="ui_radius_6">6dp</dimen>
+    <dimen name="ui_radius_8">8dp</dimen>
+    <dimen name="ui_radius_10">10dp</dimen>
+</resources>

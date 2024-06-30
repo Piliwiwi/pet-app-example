@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="UiDefaultColorStyle">
+        <item name="android:textColor">@color/ui_black</item>
+    </style>
+
+    <style name="UiFontHeader">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/ui_font_20</item>
+    </style>
+
+    <style name="UiFontSubtitle" parent="UiDefaultColorStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_16</item>
+    </style>
+
+    <style name="UiFontSecondarySubtitle" parent="UiDefaultColorStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_16</item>
+        <item name="android:textColor">@color/ui_secondary_font_grey</item>
+    </style>
+
+    <style name="UiFontInfo">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_14</item>
+        <item name="android:textColor">@color/ui_brand_primary</item>
+    </style>
+
+    <style name="UiFontBody">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_16</item>
+    </style>
+
+    <style name="UiFontAdditionalInfo">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_12</item>
+        <item name="android:textColor">@color/ui_gray</item>
+    </style>
+
+    <style name="UiFontBigHeader">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/ui_font_24</item>
+        <item name="android:textColor">@color/ui_black</item>
+    </style>
+
+    <style name="UiFontBody18">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_18</item>
+    </style>
+
+    <style name="UiFontLabel">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="UiFontSecondaryInfo12">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_12</item>
+        <item name="android:textColor">@color/ui_secondary_font_grey</item>
+    </style>
+
+    <style name="UiFontBody14">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_14</item>
+    </style>
+
+    <style name="UiFontInstruction16">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/ui_font_16</item>
+        <item name="android:textColor">@color/ui_instruction_grey</item>
+    </style>
+</resources>

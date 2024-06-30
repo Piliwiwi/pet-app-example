@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile_graph"
+    app:startDestination="@+id/petPrivateProfile">
+
+    <fragment
+        android:id="@+id/petPrivateProfile"
+        android:name="com.example.app.features.pet.profile.example.ui.exampleprofile.PetPrivateProfileFragment"
+        android:label="Perfil de Mascota"
+        tools:layout="@layout/fragment_pet_private_profile" />
+
+</navigation>

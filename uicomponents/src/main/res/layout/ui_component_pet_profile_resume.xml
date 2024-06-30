@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/ui_font_18"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <View
+        android:id="@+id/resume_component_view"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="@id/resume_component_image_card"
+        android:background="@drawable/ui_rounded_corners_rectangle"
+        android:layout_marginBottom="-18dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/resume_component_image_card"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/resume_component_image_card"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="10dp"
+        android:layout_height="119dp"
+        android:layout_width="140dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+   <ImageView
+       android:id="@+id/resume_component_imageview"
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       android:scaleType="centerCrop"
+       android:background="@color/ui_light_brand_sky_blue"
+       />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/resume_component_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ui_ic_chevron_43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/resume_component_view"
+        android:layout_marginStart="18dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="18dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resume_component_image_card"
+        app:layout_constraintEnd_toStartOf="@id/resume_component_icon">
+
+        <com.example.uicomponents.ui.view.ExampleText
+            android:id="@+id/resume_component_animal_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar"
+            app:ui_text_type="body_18"
+            android:textColor="@color/ui_white"/>
+
+        <com.example.uicomponents.ui.view.ExampleText
+            android:id="@+id/resume_component_pet_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mascota"
+            android:textColor="@color/ui_white"
+            app:ui_text_type="header" />
+
+        <com.example.uicomponents.ui.view.ExampleText
+            android:id="@+id/resume_component_gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ui_white"
+            app:ui_text_type="body_18" />
+
+    </LinearLayout>
+
+</merge>

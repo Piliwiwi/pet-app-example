@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Perro",
+    "key": "DOG"
+  },
+  {
+    "name": "Gato",
+    "key": "CAT"
+  },
+  {
+    "name": "Pato",
+    "key": "DUCK"
+  },
+  {
+    "name": "Hamster",
+    "key": "HAMSTER"
+  },
+  {
+    "name": "Caturra",
+    "key": "CATURRA"
+  },
+  {
+    "name": "Huron",
+    "key": "FERRET"
+  },
+  {
+    "name": "Pez",
+    "key": "FISH"
+  }
+]

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitledButton">
+        <attr name="ui_type" format="enum">
+            <enum name="primary" value="1" />
+            <enum name="secondary" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ExampleInputText">
+        <attr name="ui_input_type" format="enum">
+            <enum name="email" value="1" />
+            <enum name="password" value="2" />
+            <enum name="text" value="3" />
+            <enum name="long_text" value="4" />
+            <enum name="number" value="5" />
+            <enum name="picker" value="6" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InfoTemplate">
+        <attr name="ui_lottie_type" format="enum">
+            <enum name="warning_red" value="1" />
+            <enum name="empty_search" value="2" />
+            <enum name="success_green" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ExampleText">
+        <attr name="ui_text_type" format="enum">
+            <enum name="header" value="1" />
+            <enum name="subtitle" value="2" />
+            <enum name="secondary_subtitle" value="3" />
+            <enum name="info" value="4" />
+            <enum name="body" value="5" />
+            <enum name="additional_info" value="6" />
+            <enum name="big_header" value="7"/>
+            <enum name="body_18" value="8"/>
+            <enum name="label" value="9"/>
+            <enum name="secondary_info_12" value="10"/>
+            <enum name="secondary_body_14" value="11"/>
+            <enum name="instruction" value="12"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

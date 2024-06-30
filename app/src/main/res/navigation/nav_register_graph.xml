@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_register_graph"
+    app:startDestination="@+id/userNameFragment">
+
+    <fragment
+        android:id="@+id/userNameFragment"
+        android:name="com.example.app.features.auth.register.ui.userinfo.UserNameFragment"
+        android:label="Ingreso de username"
+        tools:layout="@layout/fragment_register_user_name">
+        <action
+            android:id="@+id/from_user_name_to_email"
+            app:destination="@+id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.app.features.auth.register.ui.userinfo.EmailFragment"
+        android:label="Ingreso de email"
+        tools:layout="@layout/fragment_register_email">
+        <action
+            android:id="@+id/from_email_to_name_and_pass"
+            app:destination="@+id/nameAndPasswordFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameAndPasswordFragment"
+        android:name="com.example.app.features.auth.register.ui.userinfo.NameAndPasswordFragment"
+        android:label="Ingreso de nombre y contraseña"
+        tools:layout="@layout/fragment_register_name_and_password">
+        <argument
+            android:name="userName"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/from_email_to_name_and_pass_to_success"
+            app:destination="@id/registerSuccessScreenFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registerSuccessScreenFragment"
+        android:name="com.example.app.features.auth.register.ui.userinfo.RegisterSuccessFragment"
+        android:label="Feedback de flujo completado satisfactoriamente"
+        tools:layout="@layout/fragment_register_success_screen">
+    </fragment>
+
+</navigation>

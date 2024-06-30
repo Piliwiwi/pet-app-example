@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Angora",
+    "key": "CAT"
+  },
+  {
+    "name": "Domestico Pelo Corto",
+    "key": "DUCK"
+  },
+  {
+    "name": "Siamés",
+    "key": "CATURRA"
+  },
+  {
+    "name": "Not Gato",
+    "key": "FERRET"
+  },
+  {
+    "name": "Desconozco",
+    "key": "FISH"
+  }
+]
