@@ -97,14 +97,16 @@ dependencies {
     implementation rootProject.material
     implementation rootProject.retrofit
     implementation rootProject.retrofitConverterGson
-    implementation rootProject.firebaseAnalytics
-    implementation rootProject.firebaseCrashlytics
-    implementation rootProject.firebaseConfig
-    implementation rootProject.firebaseBoM
+    /* This plugins only works with your google-services.json */
+//    implementation rootProject.firebaseAnalytics
+//    implementation rootProject.firebaseCrashlytics
+//    implementation rootProject.firebaseConfig
+//    implementation rootProject.firebaseBoM
     implementation rootProject.navigationFragment
     implementation rootProject.navigationUi
     implementation rootProject.playCore
     implementation rootProject.retrofit
+    implementation 'javax.inject:javax.inject:1'
     implementation rootProject.soloader
     implementation rootProject.androidActivity
 

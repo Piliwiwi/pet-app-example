@@ -32,5 +32,6 @@ android {
 dependencies {
     implementation rootProject.coreKtx
     implementation rootProject.appCompat
-    implementation rootProject.firebaseConfig
+    /* This plugins only works with your google-services.json */
+    //implementation rootProject.firebaseConfig
 }

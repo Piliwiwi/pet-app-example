@@ -1,7 +1,8 @@
 package com.example.featureflags
 
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.remoteconfig.ktx.remoteConfig
+/* This plugins only works with your google-services.json */
+//import com.google.firebase.ktx.Firebase
+//import com.google.firebase.remoteconfig.ktx.remoteConfig
 
 object FeatureFlags {
 
@@ -25,6 +26,6 @@ object FeatureFlags {
         return booleanMap + stringMap
     }
 
-    fun getFlag(config: BooleanValues) = Firebase.remoteConfig.getBoolean(config.key)
-    fun getFlag(config: StringValues) = Firebase.remoteConfig.getString(config.key)
+//    fun getFlag(config: BooleanValues) = Firebase.remoteConfig.getBoolean(config.key)
+//    fun getFlag(config: StringValues) = Firebase.remoteConfig.getString(config.key)
 }
